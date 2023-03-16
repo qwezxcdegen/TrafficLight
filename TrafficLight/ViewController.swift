@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLightViews()
+        trafficButton.layer.cornerRadius = 10
     }
     
     @IBAction func trafficButtonDidTapped() {
