@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="212" translatesAutoresizingMaskIntoConstraints="NO" id="Pee-jd-ZNU">
-                                <rect key="frame" x="146.66666666666663" y="91" width="100" height="585"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Pee-jd-ZNU">
+                                <rect key="frame" x="146.66666666666666" y="91" width="100" height="590.66666666666663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mjn-2i-AI8">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="332"/>
@@ -47,7 +47,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRF-4F-ZLN">
-                                        <rect key="frame" x="0.0" y="544" width="100" height="41"/>
+                                        <rect key="frame" x="0.0" y="549.66666666666663" width="100" height="41"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -61,12 +61,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pee-jd-ZNU" secondAttribute="bottom" multiplier="1.2" id="b4i-F3-EqJ"/>
+                            <constraint firstItem="Pee-jd-ZNU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bdQ-SX-JZW"/>
+                            <constraint firstItem="Pee-jd-ZNU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="mCC-Fl-7Vn"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="trafficButton" destination="iRF-4F-ZLN" id="vCY-fT-R9E"/>
-                        <outletCollection property="lightViews" destination="7kQ-zq-aAq" collectionClass="NSMutableArray" id="APO-cW-3EX"/>
-                        <outletCollection property="lightViews" destination="rHo-lw-6Xv" collectionClass="NSMutableArray" id="vKh-YC-SMU"/>
-                        <outletCollection property="lightViews" destination="WPB-eC-uW5" collectionClass="NSMutableArray" id="Np2-tk-xpV"/>
+                        <outletCollection property="lightViews" destination="rHo-lw-6Xv" collectionClass="NSMutableArray" id="Nct-Hq-FBy"/>
+                        <outletCollection property="lightViews" destination="WPB-eC-uW5" collectionClass="NSMutableArray" id="qYf-g5-iPt"/>
+                        <outletCollection property="lightViews" destination="7kQ-zq-aAq" collectionClass="NSMutableArray" id="U8m-Dg-uqu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
